@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="styleguide.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<title>Styleguide: Robotnordic</title>
+</head>
+<body>
+ <header>
+  <div class=".container">
+   <a class="logo" href="index.html"><img class="logo" src="logo.png" alt="logo"/></a>
+    <nav>
+    <ul>
+     <li><a href="farver.html">Farver</a></li>
+     <li><a href="logo.html">Logo</a></li>
+     <li><a href="knapper.html">Knapper</a></li>
+     <li><a href="Automationssiden.html">Automationssiden</a></li>
+    </ul>
+  </nav>
+  </div>
+ </header>
+ <main>
+  <div class="main">
+   <h1 class="main-text2">Automationssiden</h1>
+     <p class="main-text">Automationssiden er her hvor vi har lavet en styleguide til automationssiden. Det er den side vi skal forbedre for virksomheden, det skal vi gøre for at give brugerne af palletring en nemmer og hurtiger måde at få det hele gjort på.
+     </p>
+   </div>
+   <div class="main">
+    <h1 class="main-text"> Gamle farver</h1>
+    </div>
+  <div class="row">
+  <div class="column">
+      <div class="blueish"> Knapper HEX: #242B3A  </div>
+  </div>
+  <div class="column">
+      <div class="menufarve"> Nav Farve HEX: #353a3f </div>
+  </div>
+  <div class="column">
+    <div class="darkblue"> HEX: #0D0D0D RGB: 0, 0, 0 </div>
+  </div>
+</div>
+<div class="main">
+ <h1 class="main-text"> Nye Farver</h1>
+ </div>
+<div class="row">
+<div class="column">
+   <div class="organe"> knap/hover HEX: #E06436  </div>
+</div>
+<div class="column">
+   <div class="menufarve"> Nav farver HEX: #353a3f  </div>
+</div>
+<div class="column">
+ <div class="whit"> Baggrund HEX: #FFFFFF  </div>
+</div>
+</div>
+<div class="main">
+ <h1 class="main-text"> Font farve</h1>
+ </div>
+<div class="row">
+<div class="column">
+   <div class="organe"> Font farver HEX: #E06436  </div>
+</div>
+<div class="column">
+   <div class="black"> Font farver HEX: #00000  </div>
+</div>
+<div class="column">
+ <div class="whit"> Font farver HEX: #FFFFFF  </div>
+</div>
+</div>
+<div class="main">
+    <h1 class="main-text"> Logo </h1>
+ </div>
+ <div class="row">
+   <div class="column">
+      <a target="_blank" href="logo.png">
+     <img class="demo cursor" src="logo.png" style="width:100%" alt="marked">
+   </a>
+   </div>
+ </div>
+</div>
+
+<div class="main">
+ <h1 class="main-text"> hambruger menu</h1>
+</div>
+
+<!-- Simulate a smartphone / tablet -->
+<div class="mobile-container">
+<!-- Top Navigation Menu -->
+<div class="topnav">
+  <a href="#home" class="active">hambruger menu</a>
+  <div id="myLinks">
+    <a href="#news"> news</a>
+    <a href="#contact">Contact</a>
+    <a href="#about">About</a>
+    <a href="#about">About</a>
+
+  </div>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+</div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+
+<div class="grid-container">
+
+  <div class="main">
+   <h1 class="main-text"> hambruger menu</h1>
+  </div>
+  <div>
+
+    <h2 class="h2skri">HTML:<h2>
+    <xmp class="pskrift">
+      <div class="topnav">
+        <a href="#home" class="active">hambruger menu</a>
+        <div id="myLinks">
+          <a href="#news"> news</a>
+          <a href="#contact">Contact</a>
+          <a href="#about">About</a>
+          <a href="#about">About</a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+   </xmp>
+  </div>
+  <div>
+    <div style="overflow-y: scroll; height:280px;">
+    <h2 class="h2skri">css:<h2>
+    <xmp class="pskrift">
+      .topnav {
+        overflow: hidden;
+        background-color: #353a3f;
+        position: relative;
+      }
+      .topnav #myLinks {
+        display: none;
+      }
+      .topnav a {
+        color: white;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+      }
+      .topnav a.icon {
+        background: #353a3f;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+      .topnav a:hover {
+        background-color: #E06436;
+        color: black;
+      }
+   </xmp>
+   </div>
+  </div>
+  <div>
+    <h2 class="h2skri">javascript:<h2>
+    <xmp class="pskrift">
+      <script>
+      function myFunction() {
+        var x = document.getElementById("myLinks");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+      </script>
+   </xmp>
+   </div>
+  <div>
+    <h2 class="h2skri">Icon:<h2>
+    <xmp class="pskrift">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   </xmp>
+   </div>
+  </div>
+  <div class="main">
+   <h1 class="main-text2"> nye Knapper</h1>
+  </div>
+   <div class="grid-container">
+     <div>
+       <button class="autornge">organse knap</button>
+     </div>
+     <div>
+       <h2 class="h2skri">HTML:<h2>
+       <xmp class="pskrift">
+           <button class="autornge">Læs mere</button>
+      </xmp>
+     </div>
+     <div>
+       <div style="overflow-y: scroll; height:280px;">
+       <h2 class="h2skri">css:<h2>
+       <xmp class="pskrift">
+         .autobutton{
+           background-color:#e06436;
+           border: 1px solid #353a3f;
+           border-radius: 12px;
+           padding: 20px;
+           width: 200px;
+           height: 15px;
+           text-align: center;
+           color: #ffffff;
+           font-size: 16px;
+           font-family: "Helvetica";
+           transition-duration: 0.4s;
+           margin: 20px;
+         }
+      </xmp>
+      </div>
+     </div>
+     <div>
+       <button class="autowhite">Hvid knap</button>
+     </div>
+     <div>
+       <h2 class="h2skri">HTML:<h2>
+       <xmp class="pskrift">
+           <button class="autowhite">Hvid knap</button>
+      </xmp>
+     </div>
+     <div>
+       <div style="overflow-y: scroll; height:280px;">
+       <h2 class="h2skri">css:<h2>
+       <xmp class="pskrift">
+         .autowhite{
+           background-color:#Ffffff;
+           border: 1px solid #353a3f;
+           border-radius: 12px;
+           padding: 20px;
+           width: 200px;
+           height: 15px;
+           text-align: center;
+           color: #000000;
+           font-size: 16px;
+           font-family: "Helvetica";
+           transition-duration: 0.4s;
+           margin: 20px;
+         }
+      </xmp>
+      </div>
+     </div>
+     <div>
+       <button class="iconbottom">icon</button>
+     </div>
+     <div>
+       <h2 class="h2skri">HTML:<h2>
+       <xmp class="pskrift">
+           <button class="iconbottom">icon</button>
+      </xmp>
+     </div>
+     <div>
+       <div style="overflow-y: scroll; height:280px;">
+       <h2 class="h2skri">css:<h2>
+       <xmp class="pskrift">
+         .iconbottom {
+           background-color:#e06436;
+           border-radius: 12px;
+           border: 1px solid #353a3f;
+           padding: 14px 32px;
+           margin: 30px;
+           width: 40px;
+           height: 40px;
+           text-align: center;
+           color: #ffffff;
+           font-size: 14px;
+           font-family:"Helvetica";
+           padding: 25px;
+           transition-duration: 0.4s;
+         }
+      </xmp>
+      </div>
+    </div>
+
+      <div>
+        <button class="cirklerknap">cirkler knap</button>
+      </div>
+      <div>
+        <h2 class="h2skri">HTML:<h2>
+        <xmp class="pskrift">
+            <button class="cirklerknap">cirkler knap</button>
+       </xmp>
+      </div>
+      <div>
+        <div style="overflow-y: scroll; height:280px;">
+        <h2 class="h2skri">css:<h2>
+        <xmp class="pskrift">
+          .cirklerknap{
+            background-color:#e06436;
+            border: 1px solid #353a3f;
+            border-radius: 18px;
+            padding: 20px;
+            width: 200px;
+            height: 15px;
+            text-align: center;
+            color: #ffffff;
+            font-size: 16px;
+            font-family: "Helvetica";
+            transition-duration: 0.4s;
+            margin: 20px;
+          }
+       </xmp>
+       </div>
