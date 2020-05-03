@@ -262,6 +262,7 @@
 .button{
   background-color:#e06436;
   border: 1px solid #e06436;
+  border-radius: 8px;
   padding: 20px;
   width: 200px;
   height: 15px;
@@ -399,7 +400,8 @@ div.valg {
   color: #ffffff;
   font-size: 14px;
   font-family:"Helvetica";
-  padding: 25px;
+  padding: 15px;
+  padding-right: 30px;
   transition-duration: 0.4s;
 }
 
