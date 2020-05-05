@@ -327,7 +327,7 @@ div.valg {
 
 .topnav {
   overflow: hidden;
-  background-color: #353a3f;
+  background-color: #000000;
   position: relative;
 }
 
@@ -344,7 +344,7 @@ div.valg {
 }
 
 .topnav a.icon {
-  background: #353a3f;
+  background: #000000;
   display: block;
   position: absolute;
   right: 0;
@@ -352,8 +352,8 @@ div.valg {
 }
 
 .topnav a:hover {
-  background-color: #E06436;
-  color: black;
+  background-color: #55595c;
+  color: #cccccc;
 }
 
 /* knapper for ny side */
