@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <title>New templet</title>
+  <meta charset="utf-8">
+  <meta name="description" content="SEO SEO SEO SEO">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="newtemplet.css" rel="stylesheet" type="text/css">
+  <script src="newtemplet.js" async></script>
+  <script src="main.js" async></script>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <img src="logo.png"  style="width:110%;" alt="Robot Nordic logo">
+    </div>
+    <div class="btn-toggle-nav" onclick="toggleNav()">
+      <img src="hammenu.png" style="width:15%;" alt="Robot Nordic logo">
+    </div>
+  </div>
+  <div class="nav-sidebar">
+    <ul>
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="newtemplet.html">CREATE NEW TEMPLATE</a></li>
+      <li><a href="layoutcontrol.html">LAYOUT & CONTROL PANEL</a></li>
+      <li><a href="login.html">Login</a></li>
+    </ul>
+  </div>
+  <div class="grid-container">
+  <div>
+   <h1 class="orangetekst"> Create new template</h1>
+   <fieldset>
+    <form name="form1" action="#" onsubmit="required()">
+   <h1 class="tekst"> Indtast de nødvendige værdier </h1>
+    <input type="text" placeholder="Mønster navn" id="mn">
+    <br>
+    <br>
+    <input type="text" placeholder="Palle type" id="pt">
+    </form>
+  </fieldset>
+    <fieldset>
+      <h1 class="tekst"> Fyldninger:</h1>
+      <br>
+      <br>
+     <input type="text" placeholder="Højde" id="name">
+     <br>
+     <br>
+     <input type="text" placeholder="Procent" id="name">
+     <br>
+     <br>
+     <input type="text" placeholder="Tiladt udhæng" id="name">
+</fieldset>
+<fieldset>
+   <h1 class="tekst"> Placering:</h1>
+   <label class="containe">Top
+     <br>
+     <br>
+     <br>
+     <input type="checkbox">
+     <span class="checkmark"></span>
+   </label>
+   <label class="containe">Bund
+     <br>
+     <br>
+     <br>
+     <input type="checkbox">
+     <span class="checkmark"></span>
+   </label>
+   <label class="containe">Blandede
+     <br>
+     <br>
+     <br>
+     <input type="checkbox">
+     <span class="checkmark"></span>
+   </label>
+ </fieldset>
+ <fieldset>
+    <h1 class="tekst"> Produkt:</h1>
+   <input type="text" placeholder="produkt" id="Produkt">
+   <form id="form" action="">
+   </form>
+ <button id="btn" type="button">Tilføj:</button>
+  </fieldset>
+ <fieldset>
+   <button href="index.html" id="btn" onclick="myFunction()">Gem Mønster</button>
+ </fieldset>

@@ -1,0 +1,191 @@
+body {
+  margin: 0;
+  background-color: #b6b7b7;
+}
+.header {
+  background-color: #0D0D0D;
+  padding: 0.5em 0.5em;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+}
+/*ham billede knappen*/
+.btn-toggle-nav {
+  background-color: #0D0D0D;
+  padding-top: 6%;
+  border: none;
+  cursor: pointer;
+}
+.btn-toggle-nav img {
+  margin-left: 60%;
+}
+/*navigationen*/
+.nav-sidebar {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  height: calc(100vh - 60px);
+  z-index: 1000;
+}
+.nav-sidebar ul {
+  margin-top: auto;
+  background-color: #0D0D0D;
+  padding-top: 0.625em;
+  padding-left: 8%;
+  overflow: hidden;
+  visibility: hidden;
+}
+.nav-sidebar ul li{
+  line-height: 3.75em;
+  list-style: none;
+}
+.nav-sidebar ul li a{
+  display: block;
+  height: 3.75em;
+  text-decoration: none;
+  color: #fff;
+  font-family: helvetica;
+  font-size: 1em;
+  white-space: nowrap;
+}
+.nav-sidebar ul li a:hover {
+  background-color: #56595C;
+}
+/*indhold*/
+.content {
+  position: relative;
+  width: 50%;
+  margin-top: 5%;
+  left: 10%;
+}
+.content img{
+  width: 160%;
+  height: auto;
+}
+.content .btn {
+  position: absolute;
+  top: 70%;
+  left: 10%;
+  background-color: #e06436;
+  border-radius: 0.5em;
+  padding-bottom: 15%;
+  padding-top: 6%;
+  height: 1em;
+  cursor: pointer;
+  white-space: nowrap;
+  border: none;
+}
+.content a {
+  text-decoration: none;
+  text-align: left;
+  color: #fff;
+  font-size: 1.5em;
+  font-family: helvetica;
+}
+
+.content .btn:hover {
+  background-color: #e06436;
+}
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto ;
+  grid-template-rows:auto;
+  grid-gap: 10px;
+  background-color: #b6b7b7;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: #b6b7b7;
+  text-align: center;
+  padding: 20px ;
+  color: #FFFFFF;
+  border-bottom: solid;
+  border-color: #000000;
+}
+
+.orangetekst{
+  color: #E06436;
+  font-size: 1.7em;
+  font-family: helvetica;
+  font-weight: lighter;
+  margin: 10%;
+  margin-top: 3%;
+  margin-bottom: 5%;
+  line-height: 1.5em;
+}
+
+.tekst {
+  font-size: 1.2em;
+  font-family: helvetica;
+  margin: 10%;
+  margin-top: 3%;
+  margin-bottom: 5%;
+  line-height: 1.5em;
+  color: #000000;
+}
+
+.containe {
+  display: inline-flex;
+  position: relative;
+  padding: 18px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  font-family: helvetica;
+  align-items: center;
+  color: #000000;
+}
+
+/* Hide the browser's default checkbox */
+.containe input {
+  position: absolute;
+  cursor: pointer;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+
+/* When the checkbox is checked, add a blue background */
+.containe input:checked ~ .checkmark {
+  background-color: #E06436;
+}
+
+
+
+/* Show the checkmark when checked */
+.containe input:checked ~ .checkmark:after {
+  display: inline-flex;
+}
+
+input[type=text]{
+   background-color:#FFFFFFFF;
+   border: solid;
+   border-color: #cdcdcd;
+   text-align: center;
+   color: #000000;
+   font-size: 1.2em;
+   font-family: "Helvetica";
+   transition-duration: 0.4s;
+  }
+
+#btn{
+   background-color:#e06436;
+   border: 1px solid #353a3f;
+   border-radius: 2em;
+   padding: 0.5em;
+   text-align: center;
+   color: #ffffff;
+   font-size: 1em;
+   font-family: "Helvetica";
+   transition-duration: 0.4s;
+   margin: 0.5em;
+ }
