@@ -13,7 +13,7 @@ function myFunction() {
     input.id = 'input-' + counter;
     input.type = 'text';
     input.name = 'name';
-    input.placeholder = 'Produkt ' + counter;
+    input.placeholder = 'Produkt' + counter;
     form.appendChild(input);
   };
   btn1.addEventListener('click', function() {
