@@ -68,9 +68,11 @@ body {
   top: 70%;
   left: 10%;
   background-color: #e06436;
-  border-radius: 0.5em;
-  padding-bottom: 15%;
+  border-radius: 0.2em;
+  padding-bottom: 8%;
   padding-top: 6%;
+  padding-left: 5%;
+  padding-right: 5%;
   height: 1em;
   cursor: pointer;
   white-space: nowrap;
@@ -80,7 +82,7 @@ body {
   text-decoration: none;
   text-align: left;
   color: #fff;
-  font-size: 1.5em;
+  font-size: 1em;
   font-family: helvetica;
 }
 .content .btn:hover {
@@ -104,7 +106,7 @@ body {
   font-family: helvetica;
   line-height: 1.8em;
   background-color: #e06436;
-  border-radius: 0.5em;
+  border-radius: 0.2em;
   padding-left: 5%;
   padding-right: 5%;
   padding-bottom: 18%;
@@ -116,32 +118,25 @@ body {
   text-align: center;
   margin-top: 5%;
   margin-left: 22%;
+  margin-bottom: 5%;
 }
 /*index css slut*/
 
-/*new template css start Signe*/
+/*Create New Template css start Signe*/
 .grid-container {
   display: grid;
   grid-template-columns: auto ;
   grid-template-rows:auto;
-  grid-gap: 10px;
+  grid-gap: 2px;
   background-color: #b6b7b7;
   padding: 10px;
-}
-.grid-container > div {
-  background-color: #b6b7b7;
   text-align: center;
-  padding-right: 5%;
-  padding-left: 5%;
-  color: #FFFFFF;
-  border-bottom: solid;
-  border-color: #000000;
 }
 .orangetekst{
   text-align: center;
   font-family: helvetica;
   color: #E06436;
-  font-size: 2em;
+  font-size: 1.9em;
 }
 .tekst1 {
   font-size: 1.2em;
@@ -155,43 +150,38 @@ body {
 .containe {
   display: inline-flex;
   position: relative;
-  padding: 18px;
-  margin-bottom: 12px;
   cursor: pointer;
-  font-size: 22px;
-  font-family: helvetica;
   align-items: center;
   color: #000000;
+  padding: 0.2em;
 }
 
 /* Hide the browser's default checkbox */
 .containe input {
   position: absolute;
   cursor: pointer;
-  margin-right: 0.5em;
 }
 /* Create a custom checkbox */
 .checkmark {
-  position: absolute;
-  height: 25px;
-  width: 25px;
+  position: relative;
+  width: 50px;
   background-color:#eee;
   border: none;
   padding-right: 4em;
-  padding-bottom: 0.5em;
-  padding-top: 0.5em;
-  border-radius: 0.5em;
+  padding-left: 4em;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  border-radius: 0.2em;
   text-align: center;
   color: #000000;
   font-size: 1.2em;
   font-family: "Helvetica";
-  transition-duration: 0.4s;
-  margin-right: 0.5em;
 }
 /* When the checkbox is checked, add a blue background */
 .containe input:checked ~ .checkmark {
   background-color: #E06436;
   color:#ffffff;
+  transition-duration: 0.2s;
 }
 /* Show the checkmark when checked */
 .containe input:checked ~ .checkmark:after {
@@ -200,6 +190,7 @@ body {
 input[type=text]{
    background-color:#FFFFFFFF;
    border: solid;
+   border-radius: 0.2em;
    border-color: #cdcdcd;
    text-align: center;
    color: #000000;
@@ -210,33 +201,36 @@ input[type=text]{
 #btn1{
    background-color:green;
    border: none;
-   border-radius: 0.5em;
-   padding-left: 6%;
-   padding-right: 6%;
+   border-radius: 0.2em;
+   padding-left: 10%;
+   padding-right: 10%;
    padding-bottom: 4%;
    padding-top: 4%;
    text-align: center;
    color: #ffffff;
    font-size: 2em;
    font-family: "Helvetica";
-   transition-duration: 0.4s;
+   transition-duration: 0.2s;
    margin: 0.5em;
+   cursor: pointer;
  }
-#btn{
+.btn2 button{
    background-color:#e06436;
    border: none;
-   border-radius: 0.5em;
+   border-radius: 0.2em;
    padding-left: 6%;
    padding-right: 6%;
    padding-bottom: 4%;
    padding-top: 4%;
    text-align: center;
    color: #ffffff;
-   font-size: 1.2em;
+   font-size: 1.5em;
    font-family: "Helvetica";
-   transition-duration: 0.4s;
+   transition-duration: 0.2s;
    margin: 0.5em;
+   cursor: pointer;
  }
+/*Create New Template css slut*/
 
  /*Start på Control Panel Sylvester*/
  .container1 h1{
@@ -244,9 +238,10 @@ input[type=text]{
    font-family: helvetica;
    color: #E06436;
    font-size: 2em;
+   margin-top: 10%;
  }
  .container2 h1{
-   margin-top: 1em;
+   margin-top: 1.5em;
    text-align: center;
    font-family: helvetica;
    color: #E06436;
@@ -267,7 +262,7 @@ input[type=text]{
    background-color: #fff;
    color:#000;
    padding: 15px;
-   font-size: 15px;
+   font-size: 1em;
    border-width: thin;
    cursor: pointer;
    width: 100%;
@@ -295,7 +290,8 @@ input[type=text]{
    font-family: helvetica;
  }
  .skabelon a:hover {
-   background-color: #fff;
+   background-color: #56595C;
+   color: #fff;
  }
  .view {
    display: block;
@@ -306,18 +302,20 @@ input[type=text]{
  /*Manifest/Sylvester Skabelon1 */
  .manifest {
    font-family: helvetica;
-   background-color: #DEDEDE;
+   background-color: #888;
    margin: 2em;
    padding: 1em;
    text-align: center;
    margin-left: auto;
    margin-right: auto;
    display: block;
+   border-radius: 0.2em;
    max-width: 400px;
  }
  .manifest h1{
    font-weight: bold;
-   font-size: 14px;
+   font-size: 16px;
+   margin-bottom: 10%;
  }
  .manifest hr{
    border-width: 0.5px;
@@ -340,18 +338,20 @@ input[type=text]{
  /*Manifest/Sylvester Skabelon2,3 og 4 */
  .manifest1 {
    font-family: helvetica;
-   background-color: #DEDEDE;
+   background-color: #888;
    margin: 2em;
    padding: 1em;
    text-align: center;
    margin-left: auto;
    margin-right: auto;
    display: block;
+   border-radius: 0.2em;
    max-width: 400px;
  }
  .manifest1 h1{
    font-weight: bold;
-   font-size: 14px;
+   font-size: 16px;
+   margin-bottom: 10%;
  }
  .manifest1 hr{
    border-width: 0.5px;
@@ -374,18 +374,20 @@ input[type=text]{
  /*Manifest/Sylvester Skabelon 5 */
  .manifest2 {
    font-family: helvetica;
-   background-color: #DEDEDE;
+   background-color: #888;
    margin: 2em;
    padding: 1em;
    text-align: center;
    margin-left: auto;
    margin-right: auto;
    display: block;
+   border-radius: 0.2em;
    max-width: 400px;
  }
  .manifest2 h1{
    font-weight: bold;
-   font-size: 14px;
+   font-size: 16px;
+   margin-bottom: 10%;
  }
  .manifest2 hr{
    border-width: 0.5px;
@@ -405,32 +407,36 @@ input[type=text]{
     padding:0 ;
  }
  /*Manifest liste til manifest /Sylvester/  */
- ul.liste1 {
+ .liste1 {
    list-style-type: none;
    margin: 0;
    padding: 0;
    text-align:left;
-   font-size: 12px;
+   font-size: 14px;
+   color: #fff;
  }
-
+ .solid1 {
+   border: 1em solid #fff;
+ }
  /*Manifest accordion /Sylvester/  */
  .udvid {
-   background-color: #fff;
+   background-color: #56595C;;
    color: #000;
    cursor: pointer;
    width: 100%;
-   padding: 16px;
+   padding: 5px;
    border: none;
+   border-radius: 0.2em;
    text-align: center;
-   font-size: 16px;
-   transition: 0.3s;
+   font-size: 1.5em;
    font-weight: bold;
    outline: none;
+   transition-duration: 0.1s;
  }
  .boks{
    padding: 0 16px;
    display: none;
-   background-color: #DEDEDE;
+   background-color: #56595C;
    overflow: hidden;
  }
 /*control panel css slut*/

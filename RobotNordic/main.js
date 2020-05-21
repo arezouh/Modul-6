@@ -34,6 +34,7 @@ let toggleNav = function() {
 }
 /*toggle nav slut*/
 
+
 /* Dropdown menu Sylvester */
  function myFunction() {
    document.getElementById("mySkabelon").classList.toggle("view");
@@ -54,7 +55,7 @@ let toggleNav = function() {
  }
 // Dropdown menu slut
 
-// Manifest accordion
+// Manifest udvidelse
 var udv = document.getElementsByClassName("udvid");
 var i;
 
@@ -70,3 +71,28 @@ for (i = 0; i < udv.length; i++) {
   });
 }
 // Manifest menu slut
+
+// plus produkt og alertboks - Signe
+function alert() {
+  alert("Dit template er nu gemt under layout...");
+}
+
+
+(function() {
+  var counter = 0;
+  var btn = document.getElementById('btn1');
+  var form = document.getElementById('form');
+  var addInput = function() {
+    counter++;
+    var input = document.createElement("input");
+    input.id = 'input-' + counter;
+    input.type = 'text';
+    input.name = 'name';
+    input.placeholder = 'Produkt' + counter;
+    form.appendChild(input);
+  };
+  btn1.addEventListener('click', function() {
+    addInput();
+  }.bind(this));
+})();
+//slut
