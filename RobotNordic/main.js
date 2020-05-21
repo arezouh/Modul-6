@@ -1,5 +1,5 @@
 
-/*toggle nav index*/
+/*toggle nav index Arezou*/
 let toggleNavStatus = false;
 
 let toggleNav = function() {
@@ -33,3 +33,40 @@ let toggleNav = function() {
   }
 }
 /*toggle nav slut*/
+
+/* Dropdown menu Sylvester */
+ function myFunction() {
+   document.getElementById("mySkabelon").classList.toggle("view");
+}
+
+
+ window.onclick = function(event) {
+   if (!event.target.matches('.skabelonknap')) {
+     var skabelons = document.getElementsByClassName("skabelon-content");
+     var i;
+     for (i = 0; i < skabelons.length; i++) {
+       var openSkabelon = dropdowns[i];
+       if (openSkabelon.classList.contains('view')) {
+        openSkabelon.classList.remove('view');
+       }
+     }
+   }
+ }
+// Dropdown menu slut
+
+// Manifest accordion
+var acc = document.getElementsByClassName("udvid");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var boks = this.nextElementSibling;
+    if (boks.style.display === "block") {
+      boks.style.display = "none";
+    } else {
+      boks.style.display = "block";
+    }
+  });
+}
+// Manifest menu slut

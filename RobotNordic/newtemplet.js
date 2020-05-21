@@ -16,7 +16,7 @@ function myFunction() {
     input.placeholder = 'Produkt ' + counter;
     form.appendChild(input);
   };
-  btn.addEventListener('click', function() {
+  btn1.addEventListener('click', function() {
     addInput();
   }.bind(this));
 })();
