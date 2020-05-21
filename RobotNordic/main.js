@@ -55,11 +55,11 @@ let toggleNav = function() {
 // Dropdown menu slut
 
 // Manifest accordion
-var acc = document.getElementsByClassName("udvid");
+var udv = document.getElementsByClassName("udvid");
 var i;
 
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
+for (i = 0; i < udv.length; i++) {
+  udv[i].addEventListener("click", function() {
     this.classList.toggle("active");
     var boks = this.nextElementSibling;
     if (boks.style.display === "block") {
