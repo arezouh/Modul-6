@@ -86,14 +86,22 @@
     padding-top: 0.6em;
     font-size:0.9em;
   }
-  }
 
-  .H1-color{
-    font-family: 'Noto Sans HK', sans-serif;
-    font-size: 50px;
-    text-align: left;
-    margin: 10px;
+  .h1-color{
+    text-align: center;
+    font-family:Helvetica;
+    text-decoration:underline;
+    font-size: 2em;
+    font-weight: bolder;
     }
+
+    .h2-color{
+      text-align: left;
+      font-family:Helvetica;
+      text-decoration:underline;
+      font-size: 2em;
+      font-weight: bolder;
+      }
 
 
 /*dette er til siden som omhandler farver */
@@ -175,15 +183,15 @@
     font-size: 20px;
   }
 
-  .grey{
+  .whit{
     width: 320px;
     padding: 20px;
     border: 2px solid black;
     border-radius: 8px;
-    background: #323e44;
+    background: #ffffff;
     margin: 20px;
     text-align: center;
-    color: #ffffff;
+    color: #000000;
     font-family: 'Noto Sans HK', sans-serif;
     font-size: 20px
   }
@@ -234,6 +242,19 @@
       border: 2px solid black;
       border-radius: 8px;
       background: #353a3f;
+      margin: 20px;
+      text-align: center;
+      color: white;
+      font-family: 'Noto Sans HK', sans-serif;
+      font-size: 20px;
+    }
+
+    .mainfest{
+      width: 320px;
+      padding: 20px;
+      border: 2px solid black;
+      border-radius: 8px;
+      background: #888888;
       margin: 20px;
       text-align: center;
       color: white;
