@@ -1,4 +1,4 @@
-function myFunction() {
+function alert() {
   alert("Dit templet er ny gemt under layout...");
 }
 
