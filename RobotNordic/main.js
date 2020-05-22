@@ -40,7 +40,6 @@ let toggleNav = function() {
    document.getElementById("mySkabelon").classList.toggle("view");
 }
 
-
  window.onclick = function(event) {
    if (!event.target.matches('.skabelonknap')) {
      var skabelons = document.getElementsByClassName("skabelon-content");
