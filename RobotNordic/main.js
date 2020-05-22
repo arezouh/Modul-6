@@ -42,10 +42,10 @@ let toggleNav = function() {
 
  window.onclick = function(event) {
    if (!event.target.matches('.skabelonknap')) {
-     var skabelons = document.getElementsByClassName("skabelon-content");
-     var i;
+     let skabelons = document.getElementsByClassName("skabelon-content");
+     let i;
      for (i = 0; i < skabelons.length; i++) {
-       var openSkabelon = dropdowns[i];
+       let openSkabelon = dropdowns[i];
        if (openSkabelon.classList.contains('view')) {
         openSkabelon.classList.remove('view');
        }
@@ -55,13 +55,13 @@ let toggleNav = function() {
 // Dropdown menu slut
 
 // Manifest udvidelse Sylvester
-var udv = document.getElementsByClassName("udvid");
-var i;
+let udv = document.getElementsByClassName("udvid");
+let i;
 
 for (i = 0; i < udv.length; i++) {
   udv[i].addEventListener("click", function() {
     this.classList.toggle("active");
-    var boks = this.nextElementSibling;
+    let boks = this.nextElementSibling;
     if (boks.style.display === "block") {
       boks.style.display = "none";
     } else {
@@ -78,12 +78,12 @@ function alert() {
 
 
 (function() {
-  var counter = 0;
-  var btn = document.getElementById('btn1');
-  var form = document.getElementById('form');
-  var addInput = function() {
+  let counter = 0;
+  let btn = document.getElementById('btn1');
+  let form = document.getElementById('form');
+  let addInput = function() {
     counter++;
-    var input = document.createElement("input");
+    let input = document.createElement("input");
     input.id = 'input-' + counter;
     input.type = 'text';
     input.name = 'name';
