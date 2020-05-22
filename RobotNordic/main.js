@@ -45,7 +45,7 @@ let toggleNav = function() {
      let skabelons = document.getElementsByClassName("skabelon-content");
      let i;
      for (i = 0; i < skabelons.length; i++) {
-       let openSkabelon = dropdowns[i];
+       let openSkabelon = skabelons[i];
        if (openSkabelon.classList.contains('view')) {
         openSkabelon.classList.remove('view');
        }
