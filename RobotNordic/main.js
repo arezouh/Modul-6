@@ -58,6 +58,8 @@ let toggleNav = function() {
 let udv = document.getElementsByClassName("udvid");
 let i;
 
+for (i = 0; i < udv.length; i++) {
+  udv[i].addEventListener("click", function() {
     let boks = this.nextElementSibling;
     if (boks.style.display === "block") {
       boks.style.display = "none";
