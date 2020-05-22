@@ -55,7 +55,7 @@ let toggleNav = function() {
  }
 // Dropdown menu slut
 
-// Manifest udvidelse
+// Manifest udvidelse Sylvester
 var udv = document.getElementsByClassName("udvid");
 var i;
 
