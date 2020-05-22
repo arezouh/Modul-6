@@ -439,4 +439,9 @@ input[type=text]{
    background-color: #56595C;
    overflow: hidden;
  }
+ .active, .accordion:hover {
+   background-color: #333;
+   color: #fff;
+ }
+
 /*control panel css slut*/
